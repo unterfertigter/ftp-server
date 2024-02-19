@@ -1,10 +1,10 @@
 # FTP Server
 
-Minimalistic Docker image for a FTP server to run inside an Alpine Linux LXC container running inside Proxmox.
+Minimalistic Docker image for a FTP server to run inside an Alpine Linux LXC container hosted inside Proxmox.
 
 The FTP server is using [vsftpd](https://security.appspot.com/vsftpd.html). This Docker image is basically an enhanced version of [garethflowers/ftp-server](https://hub.docker.com/r/garethflowers/ftp-server), see [garethflowers/docker-ftp-server](https://github.com/garethflowers/docker-ftp-server).
 
-Running the original image [garethflowers/ftp-server](https://hub.docker.com/r/garethflowers/ftp-server) inside a LXC container in Promox, no passive FTP mode is possible because of the wrong IP address  `pasv_address=0.0.0.0` in `/etc/vsftpd.conf`. The additional environment parameter `HOST_IP` fixes that, it has to be set to the local IP of the host the docker container runs on.
+Running the original Docker image [garethflowers/ftp-server](https://hub.docker.com/r/garethflowers/ftp-server) inside a LXC container in Promox, no passive FTP mode is possible because of the wrong IP address  `pasv_address=0.0.0.0` in `/etc/vsftpd.conf`. The additional environment parameter `HOST_IP` fixes that, it has to be set to the local IP of the host the Docker container runs on.
 
 ## How to start a FTP server instance
 
