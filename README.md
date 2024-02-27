@@ -24,6 +24,10 @@ docker run \
  unterfertigter/ftp-server
 ```
 
+## Docker Hub repository
+
+[unterfertigter/ftp-server](https://hub.docker.com/r/unterfertigter/ftp-server)
+
 ## License
 
 This image is released under the [MIT License](https://raw.githubusercontent.com/garethflowers/docker-ftp-server/master/LICENSE).
