@@ -1,4 +1,4 @@
-FROM alpine:3.23.2
+FROM alpine:3.23.3
 ENV HOST_IP=0.0.0.0 \
     FTP_USER=foo \
 	FTP_PASS=bar \
